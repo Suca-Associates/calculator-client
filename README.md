@@ -9,3 +9,20 @@
 > npm run dev
 
 Go to http://127.0.0.1:5173/
+
+
+#Git commands
+### Send data
+ - git add .
+ - git commit -am "Message"
+ - git push origin main
+
+### Get data
+ - git fetch --all
+ - git pull origin main
+
+ ### status 
+ - git status
+ 
+ ### log
+ - git log
