@@ -2,6 +2,8 @@
 
 > git clone git@github.com:suca19/carlculator.git
 
+> cd carlculator
+
 > npm i
 
 > npm run dev
