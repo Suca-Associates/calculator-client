@@ -1,14 +1,12 @@
 //@ts-nocheck
-function appendToResult(value: string) {
-    document.getElementById('result').value += value;
-  }
+export function appendToResult(currentValue: string, value: string) {
+  return currentValue + value;
   
-  function clearResult() {
-    document.getElementById('result').value = '';
-  }
+}
+export function clearResult() {
+  //document.getElementById('result').value = '';
+}
   
-  function calculateResult() {
-    var result = document.getElementById('result').value;
-    var answer = eval(result);
-    document.getElementById('result').value = answer;
-  }
+export function convertToNumber(value: string): number {
+  return Number(value);
+}
