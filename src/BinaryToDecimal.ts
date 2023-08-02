@@ -1,11 +1,12 @@
 export const binaryToDecimalConverter = (binaryNumber: Int32Array): number => {
+   
     let decimalValue: number = 0;
     const binaryNumberLength = binaryNumber.length;
 
     for (let i = binaryNumberLength - 1; i >= 0; i--) {
-        const bitValue = binaryNumber[i];
+        const savedValue = binaryNumber[i];
 
-        if (bitValue === 1) {
+        if (savedValue === 1) {
             decimalValue += Math.pow(2, binaryNumberLength - 1 - i);
         }
     }
