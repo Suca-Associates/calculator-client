@@ -1,9 +1,8 @@
 export const binaryToDecimalConverter = (binaryNumber: Int32Array): number => {
-   
     let decimalValue: number = 0;
     const binaryNumberLength = binaryNumber.length;
 
-    for (let i = binaryNumberLength - 1; i >= 0; i--) {
+    for (let i = 0; i < binaryNumberLength; i++) {
         const savedValue = binaryNumber[i];
 
         if (savedValue === 1) {
@@ -14,6 +13,11 @@ export const binaryToDecimalConverter = (binaryNumber: Int32Array): number => {
     return decimalValue;
 };
 
-const binaryNumber = new Int32Array([1, 0, 1, 0]);
+const userInput = prompt("Enter a binary number:");
+
+
+const binaryArray = userInput.split("").map((char) => parseInt(char, 2));
+
+const binaryNumber = new Int32Array(binaryArray);
 const decimalValue = binaryToDecimalConverter(binaryNumber);
-console.log(decimalValue); 
+console.log(" from "+ userInput+" to: " +decimalValue);
