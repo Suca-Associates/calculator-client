@@ -1,10 +1,18 @@
-export const binaryToDecimalConverter = (binaryNumber : string) :number => {
-   
-    let counterForLoop :number = 1;
+export const binaryToDecimalConverter = (binaryNumber: Int32Array): number => {
+    let decimalValue: number = 0;
     const binaryNumberLength = binaryNumber.length;
-    for(let i = binaryNumberLength-1 ; i>0 ; i--){
-        let savedValue = binaryNumber[i];
-        counterForLoop= 
+
+    for (let i = binaryNumberLength - 1; i >= 0; i--) {
+        const bitValue = binaryNumber[i];
+
+        if (bitValue === 1) {
+            decimalValue += Math.pow(2, binaryNumberLength - 1 - i);
+        }
     }
-    return 123;
-}
+
+    return decimalValue;
+};
+
+const binaryNumber = new Int32Array([1, 0, 1, 0]);
+const decimalValue = binaryToDecimalConverter(binaryNumber);
+console.log(decimalValue); 
