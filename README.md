@@ -12,7 +12,7 @@ Go to http://127.0.0.1:5173/
 
 figma designs => https://www.figma.com/file/VBfEXnvKTFgPHsXAaBzTBg/Untitled?type=design&node-id=0%3A1&t=mjjcOLM5bX1hYnmu-1
 
-#Git commands
+# Git commands
 ### Send data
  - git add .
  - git commit -am "Message"
@@ -27,3 +27,10 @@ figma designs => https://www.figma.com/file/VBfEXnvKTFgPHsXAaBzTBg/Untitled?type
  
  ### log
  - git log
+
+
+ # Unit Tests
+ ### Run a single unit test
+ - npm run test filename.spec  //npm run test binaryToDecimal.spec
+ or
+ - npx jest  filename.spec
