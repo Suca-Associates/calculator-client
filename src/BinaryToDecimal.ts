@@ -4,7 +4,7 @@ export const binaryToDecimalConverter = (binaryNumber : string) :number => {
     const binaryNumberLength = binaryNumber.length;
     for(let i = binaryNumberLength-1 ; i>0 ; i--){
         let savedValue = binaryNumber[i];
-        counterForLoop= 
+        console.log(savedValue)
     }
     return 123;
 }
