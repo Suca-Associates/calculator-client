@@ -25,7 +25,7 @@ export const bodyTemplate = html`<div>
       </div>
       <div>
         <input class="button--number" type="button" value="0">
-        <input type="button" value="C">
+        <button class="button--clear">C</button>
         <input type="button" id = "equalId" value="=">
         <input class="button--operation" type="button" value="/">
       </div>

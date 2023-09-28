@@ -1,0 +1,7 @@
+{
+  "files.autoSave": "onWindowChange",
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2
+}
