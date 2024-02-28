@@ -1,4 +1,4 @@
 export const binaryToDecimalConverter = (binaryNumber: string): number => {
-    return Number.parseInt(binaryNumber)
+    return Number.parseInt(binaryNumber, 2);
 };
 
