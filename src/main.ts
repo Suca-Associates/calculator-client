@@ -14,7 +14,7 @@ render(footerTemplate, document.querySelector('#footer') as HTMLDivElement);
 
 //Functions
 setupCounter(document.querySelector<HTMLButtonElement>('#counter')!);
-//setupButtons(document.querySelectorAll<HTMLInputElement>('.button--number'));
+setupButtons(document.querySelectorAll<HTMLInputElement>('.button--number'));
 
 const cells = new CalCulatorCells();
 cells.run();
