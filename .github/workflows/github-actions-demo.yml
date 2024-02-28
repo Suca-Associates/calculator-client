@@ -16,4 +16,10 @@ jobs:
               run: |
                   ls ${{ github.workspace }}
             - run: echo "🍏  The status of this job is ${{ job.status }}."
-            - run: echo "End of Actions"
+            - name: Use Node.js
+              uses: actions/setup-node@v3
+              with:
+                  node-version: '18.x'
+            - run: npm ci
+            - run: npm run build --if-present
+            - run: npm test
