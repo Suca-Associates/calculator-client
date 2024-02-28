@@ -10,7 +10,6 @@ describe('Utils', () => {
     test('should return `1365` given `10101010101` value as an input', () => {
         const intValue = binaryToDecimalConverter('10101010101');
         expect(intValue).toBe(1365)
-    })
-
+    });
   })
 });

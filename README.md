@@ -47,4 +47,4 @@ figma designs => https://www.figma.com/file/VBfEXnvKTFgPHsXAaBzTBg/Untitled?type
 
 # Dependencies
 
--   nodejs 20.X
+-   nodejs >= 20.X
