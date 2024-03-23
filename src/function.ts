@@ -1,7 +1,7 @@
 import { appendToResult } from "./utils";
 let myArray = [];
 
-do {
+export const = myFunct do {
   myArray.push());
 } while (myArray[-1] === "=");
 
