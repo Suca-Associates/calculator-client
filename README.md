@@ -13,26 +13,38 @@ Go to http://127.0.0.1:5173/
 figma designs => https://www.figma.com/file/VBfEXnvKTFgPHsXAaBzTBg/Untitled?type=design&node-id=0%3A1&t=mjjcOLM5bX1hYnmu-1
 
 # Run app
+
 > npm run dev
+
 # Git commands
+
 ### Send data
- - git add .
- - git commit -am "Message"
- - git push origin main
+
+-   git add .
+-   git commit -am "Message"
+-   git push origin main
 
 ### Get data
- - git fetch --all
- - git pull origin main
 
- ### status 
- - git status
- 
- ### log
- - git log
+-   git fetch --all
+-   git pull origin main
 
+### status
 
- # Unit Tests
- ### Run a single unit test
- - npm run test filename.spec  //npm run test binaryToDecimal.spec
- or
- - npx jest  filename.spec
+-   git status
+
+### log
+
+-   git log
+
+# Unit Tests
+
+### Run a single unit test
+
+-   npm run test filename.spec //npm run test binaryToDecimal.spec
+    or
+-   npx jest filename.spec
+
+# Dependencies
+
+-   nodejs >= 20.X
